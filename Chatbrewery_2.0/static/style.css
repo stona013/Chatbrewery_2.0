@@ -1,0 +1,98 @@
+/* Basis-Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode */
+body.light {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+
+/* Optional: Anpassungen für Darkmode */
+body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Optional: Formulareinstellungen */
+input, button {
+    margin-bottom: 10px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #6200ea;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hauptinhalt */
+main {
+    display: flex;
+    flex: 1;
+}
+
+.image-section {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+}
+
+.image-section img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.form-section {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-toggle a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #6200ea;
+    border-bottom: 2px solid transparent;
+}
+
+.form-toggle a.active {
+    border-bottom: 2px solid #6200ea;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
